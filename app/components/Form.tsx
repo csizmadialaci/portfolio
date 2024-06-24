@@ -41,7 +41,7 @@ function SubmitButton() {
           <Loader2 className="mr-2 h-4 w-4 animate-spin">Loading...</Loader2>
         </Button>
       ) : (
-        <Button className="w-full" type="submit">
+        <Button className="w-full max-w-[200px]" type="submit">
           Message me
         </Button>
       )}
