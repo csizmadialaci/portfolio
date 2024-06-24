@@ -92,7 +92,7 @@ async function GuestBookForm() {
     <div className="flex justify-between gap-4 flex-col md:flex-row">
       <Input type="text" placeholder="Your Message..." />
       <RegisterLink>
-        <Button className="w-full">Sign up</Button>
+        <Button className="w-full sm:max-w-[200px]">Sign up</Button>
       </RegisterLink>
     </div>
   );
