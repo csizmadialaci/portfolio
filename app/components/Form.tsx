@@ -42,7 +42,7 @@ function SubmitButton() {
         </Button>
       ) : (
         <Button className="w-full md:max-w-[200px]" type="submit">
-          Message me
+          Submit
         </Button>
       )}
     </>
