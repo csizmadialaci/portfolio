@@ -13,6 +13,8 @@ import {
   LoadingMessage,
 } from "../components/LoadingState";
 import { unstable_noStore as noStore } from "next/cache";
+import userImage from "../../public/user-icon.jpg";
+import Image from "next/image";
 
 async function getGuestBookEntry() {
   noStore(); // disables caching
@@ -66,11 +68,19 @@ async function GuestBookEntries() {
   return data.map((item) => (
     <li key={item.id}>
       <div className="flex items-center">
-        <img
-          src={item.User?.profileImage as string}
-          alt="user profile image"
-          className="w-10 h-10 rounded-lg"
-        />
+        {item.User?.profileImage === null ? (
+          <Image
+            src={userImage}
+            alt="user profile image"
+            className="w-10 h-10 rounded-lg"
+          />
+        ) : (
+          <img
+            src={item.User?.profileImage as string}
+            alt="user profile image"
+            className="w-10 h-10 rounded-lg"
+          />
+        )}
         <p className="text-muted-foreground pl-3 break-words">
           {item.User?.firstName}:{" "}
           <span className="text-foreground">{item.message}</span>
