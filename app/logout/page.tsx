@@ -6,7 +6,7 @@ export default async function Logout() {
   const kinde = await createKindeClient({
     client_id: "f0a14712207243a39101d094c048f304",
     domain: "https://csizmadialaszlo.kinde.com",
-    redirect_uri: window.location.origin,
+    redirect_uri: "https://csizmadia-laszlo.vercel.app/",
   });
 
   return (
