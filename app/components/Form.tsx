@@ -37,7 +37,7 @@ function SubmitButton() {
   return (
     <>
       {pending ? (
-        <Button disabled className="w-full">
+        <Button disabled className="w-full md:max-w-[200px]">
           <Loader2 className="mr-2 h-4 w-4 animate-spin">Loading...</Loader2>
         </Button>
       ) : (
