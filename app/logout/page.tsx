@@ -1,17 +1,13 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { LogoutFunction } from "../actions";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs";
 
 export default function Logout() {
   return (
     <div>
-      <Button
-        onClick={() => {
-          LogoutFunction();
-        }}
-      >
-        Logout
-      </Button>
+      <LogoutLink>
+        <Button>Logout</Button>
+      </LogoutLink>
     </div>
   );
 }
