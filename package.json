@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@kinde-oss/kinde-auth-nextjs": "^2.3.1",
+    "@kinde-oss/kinde-auth-pkce-js": "^4.0.0",
     "@prisma/client": "^5.15.1",
     "@radix-ui/react-dialog": "^1.1.0",
     "@radix-ui/react-label": "^2.1.0",
