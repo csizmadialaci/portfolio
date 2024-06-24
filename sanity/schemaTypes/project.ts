@@ -33,3 +33,32 @@ export const projectType = defineType({
     }),
   ],
 })
+
+export const projectTypeTwo = defineType({
+  name: 'adatok',
+  title: 'Adatok',
+  type: 'document',
+  fields: [
+    defineField({
+      name: 'nev',
+      title: 'Nev',
+      type: 'string',
+    }),
+    defineField({
+      name: 'felhasznalo_kep',
+      title: 'Felhasznalo Kep',
+      type: 'image',
+    }),
+    defineField({
+      name: 'link',
+      title: 'Link',
+      type: 'url',
+    }),
+    defineField({
+      name: 'jegyek',
+      title: 'Jegyek',
+      type: 'array',
+      of: [{type: 'number'}],
+    }),
+  ],
+})

@@ -8,27 +8,43 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import sketch from "../../public/tech-icons/sketch.svg";
 import canva from "../../public/tech-icons/canva.svg";
 import ai from "../../public/tech-icons/ai.svg";
-import figma from "../../public/tech-icons/figma.svg";
+import prisma from "../../public/prisma.webp";
 import chatgpt from "../../public/tech-icons/chatgpt.svg";
-import cloud from "../../public/tech-icons/creativecloud.svg";
-import framer from "../../public/tech-icons/framer.svg";
-import github from "../../public/tech-icons/github.svg";
-import slack from "../../public/tech-icons/slack.svg";
-import discord from "../../public/tech-icons/discord.svg";
-import youtube from "../../public/tech-icons/youtube.svg";
-import chrome from "../../public/tech-icons/chrome.svg";
-import pr from "../../public/tech-icons/pr.svg";
-import ps from "../../public/tech-icons/ps.svg";
-import notion from "../../public/tech-icons/notion.svg";
-import micro from "../../public/tech-icons/micro.svg";
-import twitter from "../../public/twitter.svg";
+import clerk from "../../public/clerk.webp";
+import git from "../../public/git.png";
+import github from "../../public/github.svg";
+import sanity from "../../public/sanity.png";
+import kinde from "../../public/kinde.jpg";
+import nodejs from "../../public/nodejs.webp";
+import ts from "../../public/ts.webp";
+import supabase from "../../public/supabase.png";
+import nextauth from "../../public/nextauth.png";
+import tailwind from "../../public/tailwind2.png";
+import nextjs from "../../public/nextjs.png";
+import react from "../../public/react.png";
 import insta from "../../public/insta.svg";
 import linkedin from "../../public/linkedin.svg";
 
-const icons = [canva, ai, chatgpt, discord, chrome];
+const icons = [
+  react,
+  nextjs,
+  nodejs,
+  nextauth,
+  kinde,
+  clerk,
+  prisma,
+  supabase,
+  sanity,
+  ts,
+  git,
+  github,
+  tailwind,
+  canva,
+  ai,
+  chatgpt,
+];
 
 const socialMediaIcons = [
   {
@@ -77,7 +93,7 @@ export function SectionTwo() {
                 key={index}
                 src={item}
                 alt="icon image"
-                className="w-16 h-16"
+                className="w-16 h-16 rounded-lg"
               />
             ))}
           </CardContent>

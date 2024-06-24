@@ -1,3 +1,3 @@
-import {projectType} from './project'
+import {projectType, projectTypeTwo} from './project'
 
-export const schemaTypes = [projectType]
+export const schemaTypes = [projectType, projectTypeTwo]
